@@ -9,18 +9,6 @@ paths:
       responses:
         "200":
           description: OK
-  /users/{id}:
-    parameters:
-      - name: id
-        in: path
-        required: true
-        schema:
-          type: string
-    get:
-      summary: Get user by ID
-      responses:
-        "200":
-          description: OK
   /users/details/safe-endpoint:
     get:
       summary: A new completely safe endpoint
