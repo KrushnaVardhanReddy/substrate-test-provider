@@ -9,9 +9,16 @@ paths:
       responses:
         "200":
           description: OK
-  /users/details/safe-endpoint:
+  /users/{id}:
     get:
-      summary: A new completely safe endpoint
+      summary: Get user by ID
+      deprecated: true
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
         "200":
-          description: Safe Addition
+          description: OK
