@@ -2,7 +2,7 @@ service: test-provider-api
 schema_type: openapi
 spec_path: openapi.yaml
 overrides:
-  - rule_id: OASDIFF_ENDPOINT-REMOVED
+  - rule_id: ENDPOINT_REMOVED
     path: GET /users/{id}
     reason: "Consumers migrated to /users/details. Approved explicitly."
     approved_by: krushna@example.com
