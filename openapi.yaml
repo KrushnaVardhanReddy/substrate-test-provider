@@ -9,9 +9,3 @@ paths:
       responses:
         "200":
           description: OK
-  /users/{id}:
-    get:
-      summary: Get user by ID
-      responses:
-        "200":
-          description: OK
