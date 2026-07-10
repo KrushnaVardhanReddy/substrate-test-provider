@@ -1,3 +1,10 @@
 service: test-provider-proto
 schema_type: protobuf
 spec_path: user.proto
+
+overrides:
+  - rule_id: PROTO_FIELD_TYPE_CHANGED
+    path: schema.proto:6
+    reason: "E2E testing Protobuf override functionality"
+    approved_by: "e2e-bot@example.com"
+    expires: "2099-12-31"
