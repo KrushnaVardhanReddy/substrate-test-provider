@@ -1,3 +1,6 @@
-service: test-provider-asyncapi
-schema_type: asyncapi
-spec_path: asyncapi.yaml
+service: test-provider-avro
+schema_type: avro
+spec_path: user.avsc
+avro:
+  schema_registry_url: http://localhost:8081
+  subject: test-subject
