@@ -1,0 +1,14 @@
+service: test-provider-aiml
+ml_model:
+  name: "image-classifier"
+  version: "1.0.0"
+  framework: "tensorflow"
+  task: "image_classification"
+  inputs:
+    - name: "image"
+      type: "tensor[float32, 224, 224, 3]"
+      required: true
+  outputs:
+    - name: "probabilities"
+      type: "tensor[float32, 1000]"
+      required: true
