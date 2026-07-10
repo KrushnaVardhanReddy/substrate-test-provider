@@ -1,3 +1,10 @@
 service: test-provider-graphql
 schema_type: graphql
 spec_path: schema.graphql
+
+overrides:
+  - rule_id: GQL_FIELD_REMOVED
+    path: User.email
+    reason: "E2E testing GraphQL override functionality"
+    approved_by: "e2e-bot@example.com"
+    expires: "2099-12-31"
