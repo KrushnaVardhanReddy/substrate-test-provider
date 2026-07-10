@@ -4,6 +4,7 @@ info:
   version: 1.0.0
 channels:
   users/signup:
+    x-deprecated: true
     publish:
       message:
         payload:
