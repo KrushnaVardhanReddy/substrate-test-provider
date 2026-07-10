@@ -1,3 +1,10 @@
 service: test-provider-asyncapi
 schema_type: asyncapi
 spec_path: asyncapi.yaml
+
+overrides:
+  - rule_id: ASYNCAPI_CHANNEL_REMOVED
+    path: channels.users/signup
+    reason: "E2E testing AsyncAPI override functionality"
+    approved_by: "e2e-bot@example.com"
+    expires: "2099-12-31"
