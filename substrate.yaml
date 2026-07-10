@@ -1,6 +1,3 @@
-service: test-provider-avro
-schema_type: avro
-spec_path: user.avsc
-avro:
-  schema_registry_url: http://localhost:8081
-  subject: test-subject
+service: test-provider-tf
+schema_type: terraform-plan
+spec_path: plan.json
