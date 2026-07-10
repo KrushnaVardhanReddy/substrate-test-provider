@@ -1,3 +1,10 @@
 service: test-provider-sql
 schema_type: sql
 spec_path: schema.sql
+
+overrides:
+  - rule_id: COLUMN_REMOVED
+    path: tables.users.columns.email
+    reason: "E2E testing SQL override functionality"
+    approved_by: "e2e-bot@example.com"
+    expires: "2099-12-31"
