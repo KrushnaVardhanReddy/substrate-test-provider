@@ -1,3 +1,3 @@
-service: test-provider-aiml
-schema_type: ai-model
-spec_path: model.yaml
+service: test-provider-tf
+schema_type: terraform-plan
+spec_path: plan.json
