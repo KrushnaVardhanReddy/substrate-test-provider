@@ -11,3 +11,8 @@ channels:
           properties:
             username:
               type: string
+  users/login:
+    publish:
+      message:
+        payload:
+          type: object
