@@ -3,6 +3,6 @@ syntax = "proto3";
 package myorg.v1;
 
 message User {
-  int32 id = 1;
+  string id = 1; // Changed from int32 to string
   string name = 2;
 }
