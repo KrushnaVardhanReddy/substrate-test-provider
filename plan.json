@@ -1,4 +1,8 @@
 {
   "resource_changes": [],
-  "output_changes": {}
+  "output_changes": {
+    "my_bucket_arn": {
+      "actions": ["delete"]
+    }
+  }
 }
