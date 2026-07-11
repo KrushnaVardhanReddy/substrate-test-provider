@@ -3,11 +3,8 @@ info:
   title: User API
   version: 1.0.0
 channels:
-  users/signup:
+  users/login:
     publish:
       message:
         payload:
           type: object
-          properties:
-            username:
-              type: string
