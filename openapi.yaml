@@ -12,6 +12,7 @@ paths:
   /users/{id}:
     get:
       summary: Get user by ID
+      deprecated: true
       parameters:
         - name: id
           in: path
