@@ -3,4 +3,11 @@ schema_type: avro
 spec_path: user.avsc
 avro:
   schema_registry_url: http://localhost:8081
-  subject: test-subject
+  subject: test-subject-incompatible
+
+overrides:
+  - rule_id: AVRO_INCOMPATIBLE
+    path: test-subject-incompatible
+    reason: "E2E testing Avro override functionality"
+    approved_by: "e2e-bot@example.com"
+    expires: "2099-12-31"
