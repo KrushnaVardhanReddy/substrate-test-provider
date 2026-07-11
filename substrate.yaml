@@ -1,3 +1,9 @@
 service: test-provider-sql
 schema_type: sql
 spec_path: schema.sql
+
+traffic:
+  provider: mock
+  endpoint: "http://mock"
+  lookback_days: 30
+  downgrade_threshold: 0
