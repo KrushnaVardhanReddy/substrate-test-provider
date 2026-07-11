@@ -1,4 +1,17 @@
 {
-  "resource_changes": [],
-  "output_changes": {}
+  "resource_changes": [
+    {
+      "address": "aws_s3_bucket.new_bucket",
+      "type": "aws_s3_bucket",
+      "name": "new_bucket",
+      "change": {
+        "actions": ["create"]
+      }
+    }
+  ],
+  "output_changes": {
+    "my_bucket_arn": {
+      "actions": ["create"]
+    }
+  }
 }
