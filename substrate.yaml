@@ -1,3 +1,9 @@
 service: test-provider-graphql
 schema_type: graphql
 spec_path: schema.graphql
+
+traffic:
+  provider: mock
+  endpoint: "http://mock"
+  lookback_days: 30
+  downgrade_threshold: 0
