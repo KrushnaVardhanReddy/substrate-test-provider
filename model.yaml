@@ -8,6 +8,9 @@ ml_model:
     - name: "image"
       type: "tensor[float32, 224, 224, 3]"
       required: true
+    - name: "threshold"
+      type: "float"
+      required: false
   outputs:
     - name: "probabilities"
       type: "tensor[float32, 1000]"
