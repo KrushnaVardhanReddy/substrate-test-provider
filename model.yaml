@@ -6,7 +6,7 @@ ml_model:
   task: "image_classification"
   inputs:
     - name: "image"
-      type: "tensor[float32, 224, 224, 3]"
+      type: "tensor[float32, 256, 256, 3]"
       required: true
   outputs:
     - name: "probabilities"
