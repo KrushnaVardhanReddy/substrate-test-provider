@@ -21,3 +21,9 @@ paths:
       responses:
         "200":
           description: OK
+  /health:
+    get:
+      summary: Health check
+      responses:
+        "200":
+          description: OK
