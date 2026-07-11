@@ -1,3 +1,9 @@
 service: test-provider-api
 schema_type: openapi
 spec_path: openapi.yaml
+
+traffic:
+  provider: mock
+  endpoint: "mock"
+  lookback_days: 30
+  downgrade_threshold: 0
