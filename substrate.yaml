@@ -1,3 +1,3 @@
-service: test-provider-graphql
-schema_type: graphql
-spec_path: schema.graphql
+service: test-provider-proto
+schema_type: protobuf
+spec_path: user.proto
